@@ -23,7 +23,6 @@ main{
     flex-direction: column;
     gap: 1.2rem;
     padding: 15vh 0;
-    border: 2px solid red;
 }
 
 .card{
@@ -54,4 +53,9 @@ main{
     height: 200px;
     width: 350px;
     object-fit: cover;
+}
+
+
+section {
+    height: 100%;
 }
