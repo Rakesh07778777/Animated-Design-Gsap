@@ -60,5 +60,68 @@ main{
 
 
 section {
-    height: 100%;
+    min-height: 100vh;
+    background-color: lightblue;
+}
+
+.wrapper{
+    height: 100vh ;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-wrapper{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-heading {
+    font-size: 6vw;
+    font-weight: bold;
+    span{
+        color: red;
+    }
+}
+
+.para{
+    padding: 0.8rem;
+}
+
+.para p{
+    font-size: 1.4rem;
+    color: #2a2a2a;
+    font-weight: 400;
+}
+
+.mid-btn{
+    border: 2px solid red;
+        position: relative;
+        background-color: red;
+        width: 200px;
+    button{
+        border: none;
+        outline: none;
+        padding: 0.8rem 1.2rem;
+        background-color: red;
+        color: #fff;
+        border-radius: 18px;
+    }
+}
+
+.mid-btn::after{
+    content: '';
+    height: 80%;
+    width: 20%;
+    position: absolute;
+    background-color: rgb(255, 249, 249);
+    top: 50%;
+    right: 14%;
+    transform: translateY(-50%);
+    border-radius: 50%;
 }
